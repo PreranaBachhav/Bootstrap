@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<head>
+    <title>Shopping Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <script src='main.js'></script>
+    <style>
+        .col-md-3
+        {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="margin: 25px; margin-left: 25px; margin-right: 50%;">
+        <div class="row" style="background-color: blanchedalmond;">
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch" onclick="check()"></center>
+                <img src="b.jpeg" style="margin-left: 100px;" height="150" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Men's Watch</label><br>
+                <b>Description : </b><label> Men's Watch</label><br>
+                <b>Price : </b><label> 700/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q1"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch1" onclick="check()"></center>
+                <img src="c.jpeg" style="margin-left: 100px; margin-top: 5px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> T-Shirt </label><br>
+                <b>Description : </b><label>M/L/XL/XXL</label><br>
+                <b>Price : </b><label> 600/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q2"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch2" onclick="check()"></center>
+                <img src="q.jpg" style="margin-left: 100px; margin-top: 15px;" height="400" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Towel</label><br>
+                <b>Description : </b><label> Smooth </label><br>
+                <b>Price : </b><label> 250/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q3"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch3"  onclick="check()"></center>
+                <img src="a1.jpg" style="margin-left: 100px; margin-top: 15px;" height="150" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Baby dress</label><br>
+                <b>Description : </b><label> Cotton+smooth</label><br>
+                <b>Price : </b><label> 850/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q4"><br><br>
+            </div>
+        </div>
+
+        <div class="row" style="background-color:orange;">
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch4"   onclick="check()"></center>
+                <img src="i.jpg" style="margin-left: 100px; margin-top: 5px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Toy </label><br>
+                <b>Description : </b><label>Kid Friendly.</label><br>
+                <b>Price : </b><label> 400/-</label><br>
+                <b>Qty : </b><input type="text" size="1" id="q5"><br><br> 
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch5"  onclick="check()"></center>
+                <img src="h.jpg" style="margin-left: 100px; margin-top: 5px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Pampers </label><br>
+                <b>Description : </b><label>smooth,soft </label><br>
+                <b>Price : </b><label> 450/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q6"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch6"   onclick="check()"></center>
+                <img src="f.jpg" style="margin-left: 100px; margin-top: 5px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Color Pen </label><br>
+                <b>Description : </b><label>Colorfull Writing</label><br>
+                <b>Price : </b><label> 100/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q7"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch7"   onclick="check()"></center>
+                <img src="g.jpg" style="margin-left: 100px; margin-top: 5px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Wall-Watch </label><br>
+                <b>Description : </b><label> Living Room Hall Stylish Clock</label><br>
+                <b>Price : </b><label> 950/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q8"><br><br>
+            </div>
+        </div>
+
+        <div class="row" style="background-color: blanchedalmond;">
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch8" onclick="check()"></center>
+                <img src="o.jpg" style="margin-left: 100px; margin-top: 5px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Bag </label><br>
+                <b>Description : </b><label> Stylish & fashionable </label><br>
+                <b>Price : </b><label> 650/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q9"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch9" onclick="check()"></center>
+                <img src="m.jpg" style="margin-left: 100px; margin-top: 5px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Laptop Table </label><br>
+                <b>Description : </b><label> Movable and Multiugable</label><br>
+                <b>Price : </b><label> 1050/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q10"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch10" onclick="check()"></center>
+                <img src="k.jpg" style="margin-left: 100px; margin-top: 5px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Mask </label><br>
+                <b>Description : </b><label> Cotton </label><br>
+                <b>Price : </b><label> 30/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q11"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch11" onclick="check()"></center>
+                <img src="p.jpeg" style="margin-left: 100px; margin-top: 18px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label>Chopper Cutter </label><br>
+                <b>Description : </b><label> Fastest and safest way to chop</label><br>
+                <b>Price : </b><label> 488/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q12"><br><br>
+            </div>
+        </div>
+
+        <div class="row" style="background-color:orange;">
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch12" onclick="check()"></center>
+                <img src="1.jpg" style="margin-left: 100px; margin-top: 18px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Baby Lotion </label><br>
+                <b>Description : </b><label> Good for smooth care </label><br>
+                <b>Price : </b><label> 232/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q13"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch13" onclick="check()"></center>
+                <img src="2.jpg" style="margin-left: 100px; margin-top: 18px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Nescafe Classic Instant Coffee </label><br>
+                <b>Description : </b><label>Start your day right with the first sip</label><br>
+                <b>Price : </b><label> 155/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q14"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch14" onclick="check()"></center>
+                <img src="3.jpg" style="margin-left: 100px; margin-top: 18px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label> Bottel </label><br>
+                <b>Description : </b><label> Break proof and crystal clear</label><br>
+                <b>Price : </b><label> 129/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q15"><br><br>
+            </div>
+            <div class="col-md-3">
+                <center><input type="checkbox" id="ch15" onclick="check()"></center>
+                <img src="4.jpg" style="margin-left: 100px; margin-top: 18px;" height="200" width="150" class="img-fluid"><br><br>
+                <b>Name : </b><label>Milton Prime Spin Mop </label><br>
+                <b>Description : </b><label>  floor cleaning effortless and quicker</label><br>
+                <b>Price : </b><label> 969/- </label><br>
+                <b>Qty : </b><input type="text" size="1" id="q16"><br><br>
+            </div>           
+        </div>
+        <br>
+        <div id="oi"></div>
+        
+
+            <div>
+                <span id="Men's Watch"></span>
+                <span id="price1" class="col-md-3"></span>
+                <span id="qty" class="col-md-3" ></span>
+                <span id="total1" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="T-Shirt" style="width: 200px ;"></span>
+                <span id="price2" class="col-md-3"></span>
+                <span id="qty1" class="col-md-3" ></span>
+                <span id="total2" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Towel"></span>
+                <span id="price3" class="col-md-3"></span>
+                <span id="qty2" class="col-md-3" ></span>
+                <span id="total3" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Baby dress"></span>
+                <span id="price4" class="col-md-3"></span>
+                <span id="qty3" class="col-md-3" ></span>
+                <span id="total4" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Toy"></span>
+                <span id="price5" class="col-md-3"></span>
+                <span id="qty4" class="col-md-3" ></span>
+                <span id="total5" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Pampers"></span>
+                <span id="price6" class="col-md-3"></span>
+                <span id="qty5" class="col-md-3" ></span>
+                <span id="total6" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Color Pen"></span>
+                <span id="price7" class="col-md-3"></span>
+                <span id="qty6" class="col-md-3" ></span>
+                <span id="total7" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Wall-Watch"></span>
+                <span id="price8" class="col-md-3"></span>
+                <span id="qty7" class="col-md-3" ></span>
+                <span id="total8" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Bag"></span>
+                <span id="price9" class="col-md-3"></span>
+                <span id="qty8" class="col-md-3" ></span>
+                <span id="total9" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Laptop Table"></span>
+                <span id="price10" class="col-md-3"></span>
+                <span id="qty9" class="col-md-3" ></span>
+                <span id="total10" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Mask"></span>
+                <span id="price11" class="col-md-3"></span>
+                <span id="qty10" class="col-md-3" ></span>
+                <span id="total11" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Chopper Cutter"></span>
+                <span id="price12" class="col-md-3"></span>
+                <span id="qty11" class="col-md-3" ></span>
+                <span id="total12" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Baby Lotion"></span>
+                <span id="price13" class="col-md-3"></span>
+                <span id="qty12" class="col-md-3" ></span>
+                <span id="total13" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Nescafe Classic Instant Coffee"></span>
+                <span id="price14" class="col-md-3"></span>
+                <span id="qty13" class="col-md-3" ></span>
+                <span id="total14" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Bottel"></span>
+                <span id="price15" class="col-md-3"></span>
+                <span id="qty14" class="col-md-3" ></span>
+                <span id="total15" class="col-md-3"></span>
+            </div>
+
+            <div>
+                <span id="Milton Prime Spin Mop"></span>
+                <span id="price16" class="col-md-3"></span>
+                <span id="qty15" class="col-md-3" ></span>
+                <span id="total16" class="col-md-3"></span>
+            </div>
+
+        <br>
+        <input type="submit" value="Display Total Ammount Of Shopping"  onclick="cw()" style="background-color: lightblue;">
+
+        <script>
+            let sum=0;
+            function check()
+            {
+                document.getElementById("oi").innerHTML = '<h3>Order Items</h3>'
+                var che1=document.getElementById("ch");
+                if (che1.checked == true) 
+                {
+                    var val1 = document.getElementById("q1").value;
+                    var item1 = 700;
+                    var a1 = val1 * item1;
+                    sum=sum+a1;
+                    if(val1!=0)
+                    {
+                        document.getElementById("Men's Watch").innerHTML = "Men's Watch";
+                        document.getElementById("price1").innerHTML = item1;
+                        document.getElementById("qty").innerHTML = val1;
+                        document.getElementById("total1").innerHTML = a1;
+                    }
+                else
+                {
+                    alert("Please Select Quantity Of Item 01...!!!")
+                }
+            }
+            
+            var che2=document.getElementById("ch1");
+            if (che2.checked == true)
+            {
+                var val2 = document.getElementById("q2").value;
+                var item2 = 600;
+                var a2 = val2 * item2;
+                sum=sum+a2;
+                if(val2!=0)
+                {
+                    document.getElementById("T-Shirt").innerHTML = "T-Shirt";
+                    document.getElementById("price2").innerHTML = item2;
+                    document.getElementById("qty1").innerHTML = val2;
+                    document.getElementById("total2").innerHTML = a2;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 02...!!!")
+                }
+            }
+            
+            
+            var che3=document.getElementById("ch2");
+            if (che3.checked == true)
+            {
+                var val3 = document.getElementById("q3").value;
+                var item3 = 250;
+                var a3 = val3 * item3;
+                sum=sum+a3;
+                if(val3!=0)
+                {
+                    document.getElementById("Towel").innerHTML = "Towel";
+                    document.getElementById("price3").innerHTML = item3;
+                    document.getElementById("qty2").innerHTML = val3;
+                    document.getElementById("total3").innerHTML = a3;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 03...!!!")
+                }
+            }
+            
+            var che4=document.getElementById("ch3");
+            if (che4.checked == true)
+            {
+                var val4 = document.getElementById("q4").value;
+                var item4 = 850;
+                var a4 = val4 * item4;
+                sum=sum+a4;
+                if(val4!=0)
+                {
+                    document.getElementById("Baby dress").innerHTML = "Baby dress";
+                    document.getElementById("price4").innerHTML = item4;
+                    document.getElementById("qty4").innerHTML = val4;
+                    document.getElementById("total4").innerHTML = a4;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 04...!!!")
+                }
+            }
+            
+            var che5=document.getElementById("ch4");
+            if (che5.checked == true) 
+            {
+                var val5 = document.getElementById("q5").value;
+                var item5 = 400;
+                var a5 = val5 * item5;
+                sum=sum+a5;
+                if(val5!=0)
+                {
+                    document.getElementById("Toy").innerHTML = "Toy";
+                    document.getElementById("price5").innerHTML = item5;
+                    document.getElementById("qty4").innerHTML = val5;
+                    document.getElementById("total5").innerHTML = a5;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 05...!!!")
+                }
+            }
+            
+            var che6=document.getElementById("ch5");
+            if (che6.checked == true)
+            {
+                var val6 = document.getElementById("q6").value;
+                var item6 = 450;
+                var a6 = val6 * item6;
+                sum=sum+a6;
+                if(val6!=0)
+                {
+                    document.getElementById("Pampers").innerHTML = "Pampers";
+                    document.getElementById("price6").innerHTML = item6;
+                    document.getElementById("qty5").innerHTML = val6;
+                    document.getElementById("total6").innerHTML = a6;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 06...!!!")
+                }
+            }
+            
+            var che7=document.getElementById("ch6");
+            if (che7.checked == true) 
+            {
+                var val7 = document.getElementById("q7").value;
+                var item7 = 100;
+                var a7 = val7 * item7;
+                sum=sum+a7;
+                if(val7!=0)
+                {
+                    document.getElementById("Color Pen").innerHTML = "Color Pen";
+                    document.getElementById("price7").innerHTML = item7;
+                    document.getElementById("qty6").innerHTML = val7;
+                    document.getElementById("total7").innerHTML = a7;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 07...!!!")
+                }
+            }
+            
+            var che8=document.getElementById("ch7");
+            if (che8.checked == true) 
+            {
+                var val8 = document.getElementById("q8").value;
+                var item8 = 950;
+                var a8 = val8 * item8;
+                sum=sum+a8;
+                if(val8!=0)
+                {
+                    document.getElementById("Wall-Watch").innerHTML = "Wall-Watch";
+                    document.getElementById("price8").innerHTML = item8;
+                    document.getElementById("qty7").innerHTML = val8;
+                    document.getElementById("total8").innerHTML = a8;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 08...!!!")
+                }
+            }
+            
+            var che9=document.getElementById("ch8");
+            if (che9.checked == true) 
+            {
+                var val9 = document.getElementById("q9").value;
+                var item9 = 650;
+                var a9 = val9 * item9;
+                sum=sum+a9;
+                if(val9!=0)
+                {
+                    document.getElementById("Bag").innerHTML = "Bag";
+                    document.getElementById("price9").innerHTML = item9;
+                    document.getElementById("qty8").innerHTML = val9;
+                    document.getElementById("total9").innerHTML = a9;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 09...!!!")
+                }
+            }
+            
+            var che10=document.getElementById("ch9");
+            if (che10.checked == true) 
+            {
+                var val10 = document.getElementById("q10").value;
+                var item10 = 1050;
+                var a10 = val10 * item10;
+                sum=sum+a10;
+                if(val10!=0)
+                {
+                    document.getElementById("Laptop Table").innerHTML = "Laptop Table";
+                    document.getElementById("price10").innerHTML = item10;
+                    document.getElementById("qty9").innerHTML = val10;
+                    document.getElementById("total10").innerHTML = a10;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 10...!!!")
+                }
+            }
+            
+            var che11=document.getElementById("ch10");
+            if (che11.checked == true)
+            {
+                var val11 = document.getElementById("q11").value;
+                var item11 = 30;
+                var a11 = val11 * item11;
+                sum=sum+a11;
+                if(val11!=0)
+                {
+                    document.getElementById("Mask").innerHTML = "Mask";
+                    document.getElementById("price11").innerHTML = item11;
+                    document.getElementById("qty10").innerHTML = val11;
+                    document.getElementById("total11").innerHTML = a11;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 11...!!!")
+                }
+            }
+            
+            var che12=document.getElementById("ch11");
+            if (che12.checked == true) 
+            {
+                var val12 = document.getElementById("q12").value;
+                var item12 = 488;
+                var a12 = val12 * item12;
+                sum=sum+a12;
+                if(val12!=0)
+                {
+                    document.getElementById("Chopper Cutter").innerHTML = "Chopper Cutter";
+                    document.getElementById("price12").innerHTML = item12;
+                    document.getElementById("qty11").innerHTML = val12;
+                    document.getElementById("total12").innerHTML = a12;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 12...!!!")
+                }
+            }
+            
+            var che13=document.getElementById("ch12");
+            if (che13.checked == true) 
+            {
+                var val13 = document.getElementById("q13").value;
+                var item13 = 232;
+                var a13 = val13 * item13;
+                sum=sum+a13;
+                if(val13!=0)
+                {     
+                    document.getElementById("Baby Lotion").innerHTML = "Baby Lotion";
+                    document.getElementById("price13").innerHTML = item13;
+                    document.getElementById("qty12").innerHTML = val13;
+                    document.getElementById("total13").innerHTML = a13;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 13...!!!")
+                }
+            }
+            
+            var che14=document.getElementById("ch13");
+            if (che14.checked == true) 
+            {
+                var val14 = document.getElementById("q14").value;
+                var item14 = 155;
+                var a14 = val14 * item14;
+                sum=sum+a14;
+                if(val14!=0)
+                {
+                    document.getElementById("Nescafe Classic Instant Coffee").innerHTML = "Nescafe Classic Instant Coffee";
+                    document.getElementById("price14").innerHTML = item14;
+                    document.getElementById("qty13").innerHTML = val14;
+                    document.getElementById("total14").innerHTML = a14;
+                }
+                else
+                {
+                    alert("Please Select Quantity Of Item 14...!!!")
+                }
+            }
+            
+            var che15=document.getElementById("ch14");
+            if (che15.checked == true) 
+            {
+                var val15 = document.getElementById("q15").value;
+                var item15 = 129;
+                var a15 = val15 * item15;
+                sum=sum+a15;
+                if(val15!=0)
+                {
+                    document.getElementById("Bottel").innerHTML = "Bottel";
+                    document.getElementById("price15").innerHTML = item15;
+                    document.getElementById("qty15").innerHTML = val15;
+                    document.getElementById("total15").innerHTML = a15;
+            }
+            else
+            {
+                alert("Please Select Quantity Of Item 15...!!!")
+            }
+        }
+        
+        var che16=document.getElementById("ch15");
+        if (che16.checked == true) 
+        {
+            var val16 = document.getElementById("q16").value;
+            var item16 = 969;
+            var a16 = val16 * item16;
+            sum=sum+a16;
+            if(val16!=0)
+            {
+                document.getElementById("Milton Prime Spin Mop").innerHTML = "Milton Prime Spin Mop";
+                document.getElementById("price16").innerHTML = item16;
+                document.getElementById("qty15").innerHTML = val16;
+                document.getElementById("total16").innerHTML = a16;
+            }
+            else
+            {
+                alert("Please Select Quantity Of Item 16...!!!")
+            }
+        }
+    }
+    
+    function cw()
+    {
+        alert("total price : "+sum)
+        document.getElementById("sum1").innerHTML=sum;
+    }
+  </script>       
+</body>
